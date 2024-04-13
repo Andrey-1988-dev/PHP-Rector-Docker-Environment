@@ -21,10 +21,12 @@ In order to run this container you'll need docker installed.
 List the different parameters available to your container
 
 ```bash
+git clone git@github.com:Andrey-1988-dev/PHP-Rector-Docker-Environment.git
+cd php-rector-docker-environment
 docker-compose down # Stop and remove containers, networks
 docker-compose build # Build or rebuild services
 docker-compose up -d # Create and start containers in detached mode
-docker exec -it rector-app-1 bash # Enter the container
+docker exec -it php-rector-docker-environment-app-1 bash # Enter the container
 /app/vendor/bin/rector process /app/src/ --dry-run # Run Rector in dry-run mode
 /app/vendor/bin/rector process /app/src/ # Run Rector to refactor the code
 ```
